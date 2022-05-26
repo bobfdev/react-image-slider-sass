@@ -23,13 +23,14 @@
         font-size: 40px;
         color: $main-color;
         cursor: pointer;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 }
 
 .logo {
+    margin-right: 35rem;
+
     h1 {
-        margin-left: 1rem;
         color: $main-color;
     }
 }
@@ -46,6 +47,7 @@
                 text-decoration: none;
                 color: $main-color;
                 margin: 1rem;
+                text-transform: uppercase;
             }
         }
     }
