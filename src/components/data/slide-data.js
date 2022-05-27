@@ -1,9 +1,9 @@
-import paris from './images/paris.jpeg';
-import barcelona from './images/barcelona.jpeg'
-import moscow from './images/moscow.jpeg';
-import newyork from './images/newyork.jpeg';
+import paris from '../images/paris.jpeg';
+import barcelona from '../images/barcelona.jpeg'
+import moscow from '../images/moscow.jpeg';
+import newyork from '../images/newyork.jpeg';
 
-export const Data = [
+export const slideData = [
     {
         image : paris,
         text : 'Paris, France',
@@ -30,4 +30,4 @@ export const Data = [
     }
 ]
 
-export default Data;
+export default slideData;

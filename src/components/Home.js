@@ -1,13 +1,15 @@
 import React from 'react'
 import Header from './Header';
-import Section from './Section';
-import Data from './Data';
+import Hero from './Hero';
+import slideData from './data/slide-data';
+import GallerySection from './GallerySection';
 
 function Home() {
   return (
     <div>
         <Header />
-        <Section slides={Data} />
+        <Hero slides={slideData} />
+        <GallerySection />
     </div>
   )
 }

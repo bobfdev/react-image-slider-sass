@@ -1,22 +1,30 @@
 import { useState } from 'react'
-import { Data } from './Data';
-import './styles/Section.scss';
+import { slideData } from './data/slide-data';
+import './styles/Hero.scss';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
 
 
-const Section = ({ slides }) => {
+const Hero = ({ slides }) => {
     const [first, setFirst] = useState(0);
 
     const length = slides.length
 
+    const nextSlide = () => {
+        setFirst(first === length - 1 ? 0 : first + 1)
+    }
+
+    const prevSlide = () => {
+        setFirst(first === 0 ? length - 1 : first - 1)
+    }
+
   return (
     <section>
         <div className="slide">
-            <AiOutlineArrowLeft className='back' />
-            <AiOutlineArrowRight className='forward' />
-            {Data.map((item, index) => {
+            <AiOutlineArrowLeft className='back' onClick={prevSlide} />
+            <AiOutlineArrowRight className='forward' onClick={nextSlide} />
+            {slideData.map((item, index) => {
                 return (
-                    <div className={item.className}>
+                    <div className={item.className} key={index} >
                         <div className={index === first ? 'slides active' : 'slides'}>
                             {index === first && (
                                 <div>
@@ -43,4 +51,4 @@ const Section = ({ slides }) => {
   )
 }
 
-export default Section
+export default Hero
