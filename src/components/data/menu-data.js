@@ -10,8 +10,8 @@ export const menuData = [
         className : 'menu-data'
      },
      {
-        text:'Sign In',
-        path : '/signin',
+        text:'Pricing',
+        path : '/pricing',
         className : 'menu-data'
      },
      {

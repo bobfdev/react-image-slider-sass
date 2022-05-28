@@ -84,6 +84,8 @@ section {
         &:hover {
             background-color: $main-color;
             color: $header-color;
+            transform: scale(1.1);
+            transition: 1s ease-in;
         }
     }
 }
